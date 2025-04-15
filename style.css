@@ -7,15 +7,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #f8f9fa; /* Fundo suave */
-    color: #555; /* Texto mais suave */
+    background: #f8f9fa; 
+    color: #555;  
     line-height: 1.6;
 }
 
 header {
     background: linear-gradient(45deg, #a7c5bd, #e2d3d5);  
     padding: 30px;
-    color: #fff;
+    color: #680202;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
