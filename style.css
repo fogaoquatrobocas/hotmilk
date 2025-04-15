@@ -1,4 +1,4 @@
-/* Resetando o padrão de margens e preenchimento */
+ 
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, #a7c5bd, #e2d3d5); /* Gradiente suave entre dois tons pastel */
+    background: linear-gradient(45deg, #a7c5bd, #e2d3d5);  
     padding: 30px;
     color: #fff;
     text-align: center;
@@ -23,7 +23,7 @@ header {
 .header-container h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    color: #3b4c3a; /* Verde suave */
+    color: #3b4c3a;  
 }
 
 header nav ul {
@@ -34,7 +34,7 @@ header nav ul {
 }
 
 header nav button {
-    background-color: #d5a6bd; /* Cor pastel para o botão */
+    background-color: #d5a6bd;  
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -45,7 +45,7 @@ header nav button {
 }
 
 header nav button:hover {
-    background-color: #b87b9c; /* Tom mais forte ao passar o mouse */
+    background-color: #b87b9c;  
 }
 
 main {
@@ -67,7 +67,7 @@ main {
 .materia-content h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #3b4c3a; /* Verde suave */
+    color: #3b4c3a; 
 }
 
 .materia-content ul {
