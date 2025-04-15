@@ -1,3 +1,4 @@
+/* Resetando o padrão de margens e preenchimento */
 * {
     margin: 0;
     padding: 0;
@@ -5,69 +6,116 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa; /* Fundo suave */
+    color: #555; /* Texto mais suave */
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background: linear-gradient(45deg, #a7c5bd, #e2d3d5); /* Gradiente suave entre dois tons pastel */
+    padding: 30px;
+    color: #fff;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header .logo h1 {
-    margin-bottom: 10px;
+.header-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #3b4c3a; /* Verde suave */
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-nav button {
-    background-color: #444;
-    color: white;
+header nav button {
+    background-color: #d5a6bd; /* Cor pastel para o botão */
+    color: #fff;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 12px 20px;
     font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-nav button:hover {
-    background-color: #666;
+header nav button:hover {
+    background-color: #b87b9c; /* Tom mais forte ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .materia-content {
-    display: none;
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #f4f4f4;
+    background: #fff;
     border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    border: 1px solid #ccc;
 }
 
 .materia-content h2 {
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #3b4c3a; /* Verde suave */
 }
 
 .materia-content ul {
     list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .materia-content li {
     margin-bottom: 10px;
 }
 
+.materia-content button {
+    background-color: #a7c5bd;  
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.materia-content button:hover {
+    background-color: #8fae98;  
+}
+
 .subdivisao {
     display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f0f4f1;  
     border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .subdivisao.active {
     display: block;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .materia-content ul {
+        flex-direction: column;
+    }
 }

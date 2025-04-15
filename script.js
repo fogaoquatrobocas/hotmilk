@@ -11,7 +11,7 @@ function toggleMateria(materia) {
 }
 
 function showSubdivisao(subdivisaoId) {
-    
+  
     const subdivisoes = document.querySelectorAll('.subdivisao');
     subdivisoes.forEach(sub => {
         sub.classList.remove('active');
